@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        color: red;
+    }
+    p:not(:nth-child(2n+1)){
+        color:blue;
+    }
+</style>
+<body>
+    <!-- p{hello world$}*5 -->
+    <p>hello world 1</p>
+    <p>hello world 2</p>
+    <p>hello world 3</p>
+    <p>hello world 4</p>
+    <p>hello world 5</p>
+</body>
+</html>
