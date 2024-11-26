@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>input 表单元素</title>
+  </head>
+  <body>
+    <!-- input是个单标签 -->
+    <form action="xxx.php" method="get" onsubmit="">
+      <span>username:</span>
+      <input 
+        type="text"
+        name="username"
+        placeholder="please enter your name"
+        maxlength="6"
+        required
+        autocomplete="off"
+        readonly
+        value="hello"
+      >
+      <br/>
+      <span>password:</span>
+      <input type="password" name="pwd">
+      <br/>
+      <!-- radio 多选一,必须有相同的name，才能实现多选一 -->
+      <label for="gender">gender</label>
+      <span>male</span>
+      <input type="radio" value="male" name="gender">
+      <span>female</span>
+      <input type="radio" value="female" name="gender">
+      <br/>
+      <!-- checkbox 可以实现多选 -->
+      <span>eating</span>
+      <input type="checkbox" name="hobby">
+      <span>fishing</span>
+      <input type="checkbox" name="hobby" checked>
+      <span>traveling</span>
+      <input type="checkbox" name="hobby">
+      <br/>
+      <input type="submit" value="register">      
+      <input type="reset" value="reset">
+      <input type="button" value="login" disabled>
+      <input type="file">
+    </form>
+  </body>
+</html>

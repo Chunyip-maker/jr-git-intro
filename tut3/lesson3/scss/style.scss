@@ -1,6 +1,7 @@
 body {
     font-size: 15px;
     color:blue;
+    background-color: green;
 }
 
 //nesting
@@ -83,6 +84,7 @@ h2.page-header {
     background-color: #000;
 }
 
+// placeholder selector
 %ir {
     font-weight: bold;
     color:red
